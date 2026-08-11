@@ -18,7 +18,7 @@ The animated GIFs are silent README previews. Click a preview in the root README
 
 ## Media rights
 
-The repository's Apache-2.0 license applies to the original software and documentation, but **does not apply to the media files in this `showcase/` directory**. Unless an individual file says otherwise, these media files are all rights reserved and are provided only for viewing this workflow demonstration.
+The repository's software license **does not apply to the media files in this `showcase/` directory**. Unless an individual file says otherwise, these media files are all rights reserved and are provided only for viewing this workflow demonstration.
 
 Do not extract, reuse, redistribute, train on, advertise with, or imply endorsement from these media files without separate permission from the relevant rights holder. No rights to depicted products, trademarks, packaging, voices, or likenesses are granted.
 
@@ -42,6 +42,6 @@ Do not extract, reuse, redistribute, train on, advertise with, or imply endorsem
 
 ## 素材权利
 
-仓库中的 Apache-2.0 许可证适用于原创软件和文档，**不适用于本 `showcase/` 目录中的媒体文件**。除非单个文件另有说明，这些媒体文件保留全部权利，仅允许在本仓库中查看工作流演示。
+仓库的软件许可证**不适用于本 `showcase/` 目录中的媒体文件**。除非单个文件另有说明，这些媒体文件保留全部权利，仅允许在本仓库中查看工作流演示。
 
 未经相关权利方另行许可，不得提取、复用、再分发、用于训练、用于广告，或借这些素材暗示任何背书关系。本仓库不授予画面中产品、商标、包装、声音或人物肖像的任何使用权。

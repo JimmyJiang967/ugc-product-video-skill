@@ -2,9 +2,9 @@
 
 [English](README.en.md) | [简体中文](README.zh-CN.md)
 
-An open, provider-neutral AI Skill for planning and reviewing truthful 15-second presenter-led UGC product videos. It turns authorized product visuals and verified facts into product-specific demonstration strategies, a four-stage visual plan, synchronized spoken performance, and final-media ASR captions.
+A source-available, provider-neutral AI Skill for planning and reviewing truthful 15-second presenter-led UGC product videos. It turns authorized product visuals and verified facts into product-specific demonstration strategies, a four-stage visual plan, synchronized spoken performance, and final-media ASR captions.
 
-This repository is licensed under [Apache License 2.0](LICENSE), including commercial use, modification, and redistribution subject to the license terms.
+Personal learning, research, testing, hobby projects, and other noncommercial uses are welcome. Commercial use requires separate written authorization from the project owner.
 
 ## Quick start
 
@@ -12,15 +12,6 @@ Install or import the folder [`ugc-product-video`](ugc-product-video/) into a co
 
 ```text
 Use $ugc-product-video to analyze my authorized product image and verified facts, propose truthful demonstration strategies, and create a 15-second UGC product-video plan.
-```
-
-Run the local checks:
-
-```bash
-python3 ugc-product-video/scripts/validate_ugc_plan.py examples/apparel/plan.json
-python3 ugc-product-video/scripts/validate_ugc_plan.py examples/wearable-device/plan.json
-python3 ugc-product-video/scripts/validate_ugc_plan.py examples/personal-care/plan.json
-python3 ugc-product-video/scripts/validate_ugc_result.py examples/apparel/result.json
 ```
 
 ## Real showcases
@@ -68,14 +59,14 @@ The product image is translated into a lived-in wardrobe sequence that preserves
   </tr>
 </table>
 
-See [showcase/README.md](showcase/README.md) for provenance, limitations, and media-rights terms. The Showcase media is not licensed under Apache-2.0; permission to view it in this repository does not grant reuse rights to depicted products, trademarks, packaging, voices, or likenesses.
+See [showcase/README.md](showcase/README.md) for provenance, limitations, and separate media-rights terms. Permission to view the Showcase does not grant reuse rights to depicted products, trademarks, packaging, voices, or likenesses.
 
-## Community edition boundary
+## License and commercial use
 
-The public repository contains the reusable methodology, provider-neutral capability contracts, deterministic validators, original test fixtures, and the explicitly authorized Showcase above. It does not contain customer briefs, private platform integrations, production credentials, or customer-specific tuning.
+The software and documentation in the current version are licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE).
+
+You may use and modify the project for personal learning, research, testing, hobby projects, and other noncommercial purposes. You must obtain separate written authorization before using it for client work, paid services, commercial content production, advertising, affiliate or sales activity, batch monetization, internal business operations, SaaS or product integration, or resale.
+
+See [COMMERCIAL_LICENSE.md](COMMERCIAL_LICENSE.md) for practical examples and the commercial-authorization route. This is a source-available project, not an OSI-approved open-source project.
 
 This project is not affiliated with or endorsed by CapCut, Xiaohongshu, TikTok, or any video-generation provider.
-
-## Validation status
-
-The included Skill structure, Python validators, positive fixtures, and negative regression checks are validated locally. Direct end-to-end acceptance in any live video-generation platform is still pending and depends on the adapters available in that environment.
