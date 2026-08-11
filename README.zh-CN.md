@@ -1,4 +1,4 @@
-# 基于证据的 UGC 产品视频 Skill
+# UGC 产品视频 Skill
 
 [English](README.en.md) | [仓库首页](README.md)
 
@@ -60,6 +60,8 @@ Skill 与具体平台解耦，不写死某个厂商的工具名、模型名、�
 
 以下是历史测试中的直接输出，用来展示从产品图到一张 2×2 四宫格状态图，再到一条连续 15 秒视频的完整路径。它们是工作流证据，不代表质量基准，也不保证在其他生成平台得到完全相同的结果。
 
+GitHub README 不会把仓库中的 MP4 文件渲染成原生播放器，因此第三列使用可在 README 内自动播放的动态预览；点击预览即可播放带声音、带浏览器控制条的完整 MP4。
+
 ### 鞋类 · 从开箱到上脚结果
 
 四个状态把一张产品参考图转化为开箱开场、近距离展示、细节证明和上脚结尾。
@@ -69,7 +71,7 @@ Skill 与具体平台解耦，不写死某个厂商的工具名、模型名、�
   <tr>
     <td><a href="showcase/shoe/product.jpg"><img src="showcase/shoe/product-preview.jpg" width="220" alt="鞋类产品输入图"></a></td>
     <td><a href="showcase/shoe/anchor-sheet.png"><img src="showcase/shoe/anchor-preview.jpg" width="220" alt="鞋类四阶段锚点图"></a></td>
-    <td><a href="showcase/shoe/final-video.mp4"><img src="showcase/shoe/final-video-preview.jpg" width="220" alt="鞋类最终视频预览"></a><br><a href="showcase/shoe/final-video.mp4">观看 15 秒视频</a></td>
+    <td><a href="https://cdn.jsdelivr.net/gh/JimmyJiang967/ugc-product-video-skill@main/showcase/shoe/final-video.mp4"><img src="showcase/shoe/animated-preview.gif" width="220" alt="鞋类视频动态预览"></a><br><a href="https://cdn.jsdelivr.net/gh/JimmyJiang967/ugc-product-video-skill@main/showcase/shoe/final-video.mp4">播放带声音的完整视频</a></td>
   </tr>
 </table>
 
@@ -82,7 +84,7 @@ Skill 与具体平台解耦，不写死某个厂商的工具名、模型名、�
   <tr>
     <td><a href="showcase/wearable-device/product.png"><img src="showcase/wearable-device/product-preview.jpg" width="220" alt="穿戴设备产品输入图"></a></td>
     <td><a href="showcase/wearable-device/anchor-sheet.png"><img src="showcase/wearable-device/anchor-preview.jpg" width="220" alt="穿戴设备四阶段锚点图"></a></td>
-    <td><a href="showcase/wearable-device/final-video.mp4"><img src="showcase/wearable-device/final-video-preview.jpg" width="220" alt="穿戴设备最终视频预览"></a><br><a href="showcase/wearable-device/final-video.mp4">观看 15 秒视频</a></td>
+    <td><a href="https://cdn.jsdelivr.net/gh/JimmyJiang967/ugc-product-video-skill@main/showcase/wearable-device/final-video.mp4"><img src="showcase/wearable-device/animated-preview.gif" width="220" alt="穿戴设备视频动态预览"></a><br><a href="https://cdn.jsdelivr.net/gh/JimmyJiang967/ugc-product-video-skill@main/showcase/wearable-device/final-video.mp4">播放带声音的完整视频</a></td>
   </tr>
 </table>
 
@@ -95,7 +97,7 @@ Skill 与具体平台解耦，不写死某个厂商的工具名、模型名、�
   <tr>
     <td><a href="showcase/cardigan/product.png"><img src="showcase/cardigan/product-preview.jpg" width="220" alt="针织开衫产品输入图"></a></td>
     <td><a href="showcase/cardigan/anchor-sheet.png"><img src="showcase/cardigan/anchor-preview.jpg" width="220" alt="针织开衫四阶段锚点图"></a></td>
-    <td><a href="showcase/cardigan/final-video.mp4"><img src="showcase/cardigan/final-video-preview.jpg" width="220" alt="针织开衫最终视频预览"></a><br><a href="showcase/cardigan/final-video.mp4">观看 15 秒视频</a></td>
+    <td><a href="https://cdn.jsdelivr.net/gh/JimmyJiang967/ugc-product-video-skill@main/showcase/cardigan/final-video.mp4"><img src="showcase/cardigan/animated-preview.gif" width="220" alt="针织开衫视频动态预览"></a><br><a href="https://cdn.jsdelivr.net/gh/JimmyJiang967/ugc-product-video-skill@main/showcase/cardigan/final-video.mp4">播放带声音的完整视频</a></td>
   </tr>
 </table>
 
@@ -103,12 +105,12 @@ Skill 与具体平台解耦，不写死某个厂商的工具名、模型名、�
 
 ## 安装
 
-把 [`create-evidence-led-ugc-product-video`](create-evidence-led-ugc-product-video/) 文件夹导入或复制到你的 AI Agent 运行环境所支持的 Skills 目录。该目录已经包含 `SKILL.md`、界面元数据、参考方法和校验脚本。
+把 [`ugc-product-video`](ugc-product-video/) 文件夹导入或复制到你的 AI Agent 运行环境所支持的 Skills 目录。该目录已经包含 `SKILL.md`、界面元数据、参考方法和校验脚本。
 
 调用示例：
 
 ```text
-请使用 $create-evidence-led-ugc-product-video 分析我有权使用的产品图片。已确认卖点是[卖点]，目标受众是[受众]，视频口播语言是[语言]，预算上限是[预算]。
+请使用 $ugc-product-video 分析我有权使用的产品图片。已确认卖点是[卖点]，目标受众是[受众]，视频口播语言是[语言]，预算上限是[预算]。
 ```
 
 当无法取得费用报价、报价超过预算、关键操作缺乏证据，或当前能力无法生成同步出镜口播时，Agent 应该在付费前停止并说明原因。
@@ -116,10 +118,10 @@ Skill 与具体平台解耦，不写死某个厂商的工具名、模型名、�
 ## 本地验证
 
 ```bash
-python3 create-evidence-led-ugc-product-video/scripts/validate_ugc_plan.py examples/apparel/plan.json
-python3 create-evidence-led-ugc-product-video/scripts/validate_ugc_plan.py examples/wearable-device/plan.json
-python3 create-evidence-led-ugc-product-video/scripts/validate_ugc_plan.py examples/personal-care/plan.json
-python3 create-evidence-led-ugc-product-video/scripts/validate_ugc_result.py examples/apparel/result.json
+python3 ugc-product-video/scripts/validate_ugc_plan.py examples/apparel/plan.json
+python3 ugc-product-video/scripts/validate_ugc_plan.py examples/wearable-device/plan.json
+python3 ugc-product-video/scripts/validate_ugc_plan.py examples/personal-care/plan.json
+python3 ugc-product-video/scripts/validate_ugc_result.py examples/apparel/result.json
 python3 tests/run_tests.py
 ```
 

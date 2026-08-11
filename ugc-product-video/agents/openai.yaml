@@ -1,0 +1,4 @@
+interface:
+  display_name: "UGC Product Video"
+  short_description: "Plan truthful 15-second UGC product videos"
+  default_prompt: "Use $ugc-product-video to turn my authorized product image and verified facts into a truthful 15-second UGC product-video plan with final-media ASR captions."

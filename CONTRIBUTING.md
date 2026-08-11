@@ -17,10 +17,9 @@ Run:
 
 ```bash
 python3 tests/run_tests.py
-python3 /path/to/skill-creator/scripts/quick_validate.py create-evidence-led-ugc-product-video
+python3 /path/to/skill-creator/scripts/quick_validate.py ugc-product-video
 ```
 
 Explain what changed, why it is reusable, which tests cover it, and any remaining live-platform validation gap.
 
 By contributing, you agree that your contribution is licensed under Apache License 2.0 and that you have the right to submit it.
-

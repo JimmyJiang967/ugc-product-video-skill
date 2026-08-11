@@ -11,7 +11,7 @@ from types import ModuleType
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILL = ROOT / "create-evidence-led-ugc-product-video"
+SKILL = ROOT / "ugc-product-video"
 
 
 def module(name: str, path: Path) -> ModuleType:
@@ -86,4 +86,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
