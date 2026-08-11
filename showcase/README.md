@@ -14,6 +14,8 @@ The three cases were selected to show different evidence routes:
 
 The files are direct historical outputs and intentionally retain visible limitations. They are workflow examples, not official material from CapCut, Xiaohongshu, TikTok, or any generation provider; they do not imply endorsement, affiliation, or guaranteed reproducibility.
 
+The animated GIFs are silent README previews. Click a preview in the root README to play the corresponding full MP4 with sound and browser controls.
+
 ## Media rights
 
 The repository's Apache-2.0 license applies to the original software and documentation, but **does not apply to the media files in this `showcase/` directory**. Unless an individual file says otherwise, these media files are all rights reserved and are provided only for viewing this workflow demonstration.
@@ -35,6 +37,8 @@ Do not extract, reuse, redistribute, train on, advertise with, or imply endorsem
 - `cardigan/`：从服装可见细节过渡到生活化场景中的真实上身结果。
 
 这些文件是历史直接输出，会保留其中可见的局限。它们仅用于工作流展示，不是 CapCut、小红书、TikTok 或任何生成平台的官方材料，也不代表平台背书、合作关系或结果可完全复现。
+
+目录中的动态 GIF 是无声的 README 预览。点击仓库首页中的预览，即可播放对应的带声音完整 MP4。
 
 ## 素材权利
 

@@ -1,4 +1,0 @@
-interface:
-  display_name: "Evidence-Led UGC Product Video"
-  short_description: "Plan truthful 15-second UGC product videos"
-  default_prompt: "Use $create-evidence-led-ugc-product-video to turn my authorized product image and verified facts into a truthful 15-second UGC product-video plan with final-media ASR captions."

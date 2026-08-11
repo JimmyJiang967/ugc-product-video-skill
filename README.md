@@ -1,4 +1,4 @@
-# Evidence-Led UGC Product Video Skill
+# UGC Product Video Skill
 
 [English](README.en.md) | [简体中文](README.zh-CN.md)
 
@@ -8,24 +8,26 @@ This repository is licensed under [Apache License 2.0](LICENSE), including comme
 
 ## Quick start
 
-Install or import the folder [`create-evidence-led-ugc-product-video`](create-evidence-led-ugc-product-video/) into a compatible Skill runtime, then invoke:
+Install or import the folder [`ugc-product-video`](ugc-product-video/) into a compatible Skill runtime, then invoke:
 
 ```text
-Use $create-evidence-led-ugc-product-video to analyze my authorized product image and verified facts, propose truthful demonstration strategies, and create a 15-second UGC product-video plan.
+Use $ugc-product-video to analyze my authorized product image and verified facts, propose truthful demonstration strategies, and create a 15-second UGC product-video plan.
 ```
 
 Run the local checks:
 
 ```bash
-python3 create-evidence-led-ugc-product-video/scripts/validate_ugc_plan.py examples/apparel/plan.json
-python3 create-evidence-led-ugc-product-video/scripts/validate_ugc_plan.py examples/wearable-device/plan.json
-python3 create-evidence-led-ugc-product-video/scripts/validate_ugc_plan.py examples/personal-care/plan.json
-python3 create-evidence-led-ugc-product-video/scripts/validate_ugc_result.py examples/apparel/result.json
+python3 ugc-product-video/scripts/validate_ugc_plan.py examples/apparel/plan.json
+python3 ugc-product-video/scripts/validate_ugc_plan.py examples/wearable-device/plan.json
+python3 ugc-product-video/scripts/validate_ugc_plan.py examples/personal-care/plan.json
+python3 ugc-product-video/scripts/validate_ugc_result.py examples/apparel/result.json
 ```
 
 ## Real showcases
 
 These historical direct test outputs show the complete workflow from one product image to a 2×2 state sheet and then a 15-second presenter-led video. They are included as workflow evidence, not as a benchmark or a guarantee of identical output in another provider.
+
+GitHub READMEs do not embed repository MP4 files as native video players. The third column therefore uses an inline animated preview; click it to play the complete MP4 with sound and browser controls.
 
 ### Shoe · unboxing to on-foot result
 
@@ -36,7 +38,7 @@ The sequence moves from a product-only reference to four planned states: unboxin
   <tr>
     <td><a href="showcase/shoe/product.jpg"><img src="showcase/shoe/product-preview.jpg" width="220" alt="Shoe product input"></a></td>
     <td><a href="showcase/shoe/anchor-sheet.png"><img src="showcase/shoe/anchor-preview.jpg" width="220" alt="Shoe four-stage anchor sheet"></a></td>
-    <td><a href="showcase/shoe/final-video.mp4"><img src="showcase/shoe/final-video-preview.jpg" width="220" alt="Shoe final-video preview"></a><br><a href="showcase/shoe/final-video.mp4">Watch the 15-second video</a></td>
+    <td><a href="https://cdn.jsdelivr.net/gh/JimmyJiang967/ugc-product-video-skill@main/showcase/shoe/final-video.mp4"><img src="showcase/shoe/animated-preview.gif" width="220" alt="Animated preview of the shoe video"></a><br><a href="https://cdn.jsdelivr.net/gh/JimmyJiang967/ugc-product-video-skill@main/showcase/shoe/final-video.mp4">Play the full video with sound</a></td>
   </tr>
 </table>
 
@@ -49,7 +51,7 @@ When a function is confirmed but the control is not visible, the plan avoids inv
   <tr>
     <td><a href="showcase/wearable-device/product.png"><img src="showcase/wearable-device/product-preview.jpg" width="220" alt="Wearable device product input"></a></td>
     <td><a href="showcase/wearable-device/anchor-sheet.png"><img src="showcase/wearable-device/anchor-preview.jpg" width="220" alt="Wearable device four-stage anchor sheet"></a></td>
-    <td><a href="showcase/wearable-device/final-video.mp4"><img src="showcase/wearable-device/final-video-preview.jpg" width="220" alt="Wearable device final-video preview"></a><br><a href="showcase/wearable-device/final-video.mp4">Watch the 15-second video</a></td>
+    <td><a href="https://cdn.jsdelivr.net/gh/JimmyJiang967/ugc-product-video-skill@main/showcase/wearable-device/final-video.mp4"><img src="showcase/wearable-device/animated-preview.gif" width="220" alt="Animated preview of the wearable-device video"></a><br><a href="https://cdn.jsdelivr.net/gh/JimmyJiang967/ugc-product-video-skill@main/showcase/wearable-device/final-video.mp4">Play the full video with sound</a></td>
   </tr>
 </table>
 
@@ -62,7 +64,7 @@ The product image is translated into a lived-in wardrobe sequence that preserves
   <tr>
     <td><a href="showcase/cardigan/product.png"><img src="showcase/cardigan/product-preview.jpg" width="220" alt="Cardigan product input"></a></td>
     <td><a href="showcase/cardigan/anchor-sheet.png"><img src="showcase/cardigan/anchor-preview.jpg" width="220" alt="Cardigan four-stage anchor sheet"></a></td>
-    <td><a href="showcase/cardigan/final-video.mp4"><img src="showcase/cardigan/final-video-preview.jpg" width="220" alt="Cardigan final-video preview"></a><br><a href="showcase/cardigan/final-video.mp4">Watch the 15-second video</a></td>
+    <td><a href="https://cdn.jsdelivr.net/gh/JimmyJiang967/ugc-product-video-skill@main/showcase/cardigan/final-video.mp4"><img src="showcase/cardigan/animated-preview.gif" width="220" alt="Animated preview of the cardigan video"></a><br><a href="https://cdn.jsdelivr.net/gh/JimmyJiang967/ugc-product-video-skill@main/showcase/cardigan/final-video.mp4">Play the full video with sound</a></td>
   </tr>
 </table>
 

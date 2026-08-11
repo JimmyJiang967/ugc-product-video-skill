@@ -1,4 +1,4 @@
-# Evidence-Led UGC Product Video Skill
+# UGC Product Video Skill
 
 [简体中文](README.zh-CN.md) | [Repository overview](README.md)
 
@@ -60,6 +60,8 @@ Optional:
 
 The following historical direct test outputs show the complete route from a product image to one 2×2 state sheet and one continuous 15-second video. They demonstrate the workflow; they are not quality benchmarks or guarantees for other providers.
 
+GitHub READMEs do not embed repository MP4 files as native video players. The third column therefore uses an inline animated preview; click it to play the complete MP4 with sound and browser controls.
+
 ### Shoe · unboxing to on-foot result
 
 Four states turn one product reference into an unboxing hook, close presentation, detail proof, and an on-foot ending.
@@ -69,7 +71,7 @@ Four states turn one product reference into an unboxing hook, close presentation
   <tr>
     <td><a href="showcase/shoe/product.jpg"><img src="showcase/shoe/product-preview.jpg" width="220" alt="Shoe product input"></a></td>
     <td><a href="showcase/shoe/anchor-sheet.png"><img src="showcase/shoe/anchor-preview.jpg" width="220" alt="Shoe four-stage anchor sheet"></a></td>
-    <td><a href="showcase/shoe/final-video.mp4"><img src="showcase/shoe/final-video-preview.jpg" width="220" alt="Shoe final-video preview"></a><br><a href="showcase/shoe/final-video.mp4">Watch the 15-second video</a></td>
+    <td><a href="https://cdn.jsdelivr.net/gh/JimmyJiang967/ugc-product-video-skill@main/showcase/shoe/final-video.mp4"><img src="showcase/shoe/animated-preview.gif" width="220" alt="Animated preview of the shoe video"></a><br><a href="https://cdn.jsdelivr.net/gh/JimmyJiang967/ugc-product-video-skill@main/showcase/shoe/final-video.mp4">Play the full video with sound</a></td>
   </tr>
 </table>
 
@@ -82,7 +84,7 @@ Because the product control was not confirmed, the sequence avoids a guessed but
   <tr>
     <td><a href="showcase/wearable-device/product.png"><img src="showcase/wearable-device/product-preview.jpg" width="220" alt="Wearable device product input"></a></td>
     <td><a href="showcase/wearable-device/anchor-sheet.png"><img src="showcase/wearable-device/anchor-preview.jpg" width="220" alt="Wearable device four-stage anchor sheet"></a></td>
-    <td><a href="showcase/wearable-device/final-video.mp4"><img src="showcase/wearable-device/final-video-preview.jpg" width="220" alt="Wearable device final-video preview"></a><br><a href="showcase/wearable-device/final-video.mp4">Watch the 15-second video</a></td>
+    <td><a href="https://cdn.jsdelivr.net/gh/JimmyJiang967/ugc-product-video-skill@main/showcase/wearable-device/final-video.mp4"><img src="showcase/wearable-device/animated-preview.gif" width="220" alt="Animated preview of the wearable-device video"></a><br><a href="https://cdn.jsdelivr.net/gh/JimmyJiang967/ugc-product-video-skill@main/showcase/wearable-device/final-video.mp4">Play the full video with sound</a></td>
   </tr>
 </table>
 
@@ -95,7 +97,7 @@ The sequence uses a lived-in wardrobe setting, protects the garment's visible st
   <tr>
     <td><a href="showcase/cardigan/product.png"><img src="showcase/cardigan/product-preview.jpg" width="220" alt="Cardigan product input"></a></td>
     <td><a href="showcase/cardigan/anchor-sheet.png"><img src="showcase/cardigan/anchor-preview.jpg" width="220" alt="Cardigan four-stage anchor sheet"></a></td>
-    <td><a href="showcase/cardigan/final-video.mp4"><img src="showcase/cardigan/final-video-preview.jpg" width="220" alt="Cardigan final-video preview"></a><br><a href="showcase/cardigan/final-video.mp4">Watch the 15-second video</a></td>
+    <td><a href="https://cdn.jsdelivr.net/gh/JimmyJiang967/ugc-product-video-skill@main/showcase/cardigan/final-video.mp4"><img src="showcase/cardigan/animated-preview.gif" width="220" alt="Animated preview of the cardigan video"></a><br><a href="https://cdn.jsdelivr.net/gh/JimmyJiang967/ugc-product-video-skill@main/showcase/cardigan/final-video.mp4">Play the full video with sound</a></td>
   </tr>
 </table>
 
@@ -103,12 +105,12 @@ See [showcase/README.md](showcase/README.md) for provenance, visible limitations
 
 ## Installation
 
-Import or copy [`create-evidence-led-ugc-product-video`](create-evidence-led-ugc-product-video/) into the Skills directory supported by your AI-agent runtime. The folder contains the required `SKILL.md`, UI metadata, references, and scripts.
+Import or copy [`ugc-product-video`](ugc-product-video/) into the Skills directory supported by your AI-agent runtime. The folder contains the required `SKILL.md`, UI metadata, references, and scripts.
 
 Example invocation:
 
 ```text
-Use $create-evidence-led-ugc-product-video with my authorized product image. The confirmed facts are [facts]. The target audience is [audience], the spoken language is [language], and the maximum budget is [budget].
+Use $ugc-product-video with my authorized product image. The confirmed facts are [facts]. The target audience is [audience], the spoken language is [language], and the maximum budget is [budget].
 ```
 
 The agent should stop before a paid generation when no quote is available, the quote exceeds the approved ceiling, a required operation is unsupported, or joint spoken performance is unavailable.
@@ -116,10 +118,10 @@ The agent should stop before a paid generation when no quote is available, the q
 ## Validation
 
 ```bash
-python3 create-evidence-led-ugc-product-video/scripts/validate_ugc_plan.py examples/apparel/plan.json
-python3 create-evidence-led-ugc-product-video/scripts/validate_ugc_plan.py examples/wearable-device/plan.json
-python3 create-evidence-led-ugc-product-video/scripts/validate_ugc_plan.py examples/personal-care/plan.json
-python3 create-evidence-led-ugc-product-video/scripts/validate_ugc_result.py examples/apparel/result.json
+python3 ugc-product-video/scripts/validate_ugc_plan.py examples/apparel/plan.json
+python3 ugc-product-video/scripts/validate_ugc_plan.py examples/wearable-device/plan.json
+python3 ugc-product-video/scripts/validate_ugc_plan.py examples/personal-care/plan.json
+python3 ugc-product-video/scripts/validate_ugc_result.py examples/apparel/result.json
 ```
 
 The repository also includes negative regressions that must fail:
