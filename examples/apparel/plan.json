@@ -1,0 +1,54 @@
+{
+  "schema_version": "community-1.0",
+  "product": {
+    "name": "Fictional Contrast-Trim Cardigan",
+    "authorized_assets": [{"id": "front-svg", "description": "Original repository SVG, front view only", "permission_confirmed": true}],
+    "confirmed_facts": [
+      {"id": "fact-wear", "claim": "It is a wearable button-front cardigan", "source": "user_confirmed"},
+      {"id": "fact-detail", "claim": "Ribbed texture and dark contrast trim are visible in the supplied front view", "source": "visible_in_authorized_asset"}
+    ],
+    "visible_features": ["button-front opening", "ribbed front texture", "dark trim at neckline, front, cuffs, and hem"],
+    "unknowns": ["material composition", "softness", "warmth", "back design", "fit"],
+    "prohibited_claims": ["soft", "warm", "flattering", "premium", "durable"],
+    "analysis_completed_before_options": true
+  },
+  "creative": {
+    "story_mode": "direct_demo", "target_duration_seconds": 15, "aspect_ratio": "9:16",
+    "scene_mode": "lived_in_ugc", "studio_user_selected": false,
+    "lived_in_context_cues": ["wardrobe rail", "soft window light"],
+    "conversation_language": "English", "spoken_language": "English", "target_market": "North America, general adult social audience",
+    "presenter_input_mode": "product_only", "presenter_choice": "open_match", "presenter_choice_user_confirmed": true,
+    "open_match_basis": "adult presenter selected for clear garment handling and relaxed wardrobe styling",
+    "no_category_stereotype_casting": true
+  },
+  "demonstration": {
+    "only_one_safe_route": false,
+    "options": [
+      {"id": "try-on", "label": "Detail to try-on", "four_stage_arc": "Hold the front view, trace visible trim, put on the cardigan, settle into a full worn result", "hero_action": "put on the intact cardigan", "evidence_basis": "confirmed wearable state and supplied front details", "omitted_unknowns": "no material, comfort, fit, or back-view claim", "tradeoff": "strong use result with moderate generative garment-continuity risk"},
+      {"id": "wardrobe", "label": "Wardrobe styling", "four_stage_arc": "Lift from a wardrobe rail, show the front structure, align the opening, then wear it in a stable half-body view", "hero_action": "transition from rail to worn state", "evidence_basis": "front structure and confirmed wearable state", "omitted_unknowns": "no brand, occasion, fit, or fabric claim", "tradeoff": "stable product education with slightly less dynamic motion"}
+    ],
+    "selected_option_id": "try-on", "selection_user_confirmed": true,
+    "ledger": [
+      {"id": "wear-action", "fact_id": "fact-wear", "evidence_route": "state_led", "action": "put on the intact cardigan", "observable_response": "cardigan reaches a stable worn state", "required_view": "supplied front structure remains visible", "safe_wording": "It moves from a button-front layer to a complete worn look", "prohibited_implication": "no comfort or fit statement", "precise_control_action": false, "control_location_confirmed": false, "operation_method_confirmed": false},
+      {"id": "detail-action", "fact_id": "fact-detail", "evidence_route": "appearance_led", "action": "trace the visible neckline and cuff trim", "observable_response": "contrast edges remain readable", "required_view": "front and cuffs", "safe_wording": "The ribbing and dark trim define the front", "prohibited_implication": "no material-quality claim", "precise_control_action": false, "control_location_confirmed": false, "operation_method_confirmed": false}
+    ],
+    "hero_action_ledger_id": "wear-action", "action_families": ["hold_front", "trace_trim", "put_on", "adjust_cuff"],
+    "single_target_product_unit": true, "unsupported_detachable_parts": []
+  },
+  "anchor_sheet": {
+    "layout": "2x2_composite", "generation_count": 1, "user_approved": true,
+    "panels": [
+      {"role": "category_hook", "action": "presenter lifts the intact cardigan front toward camera", "state_change": "product enters from wardrobe context"},
+      {"role": "primary_feature_action", "action": "presenter traces neckline trim and ribbing", "state_change": "front details become the proof focus"},
+      {"role": "supporting_evidence", "action": "presenter begins putting on the same cardigan", "state_change": "held product transitions to body contact"},
+      {"role": "use_result", "action": "presenter wears the cardigan and adjusts one cuff", "state_change": "stable worn result with subtle continuing motion"}
+    ],
+    "product_fidelity_lock": true, "presenter_identity_lock": true, "human_scale_lock": true, "scene_continuity_lock": true, "same_unit_state_flow": true
+  },
+  "production": {"route": "single_continuous_15s", "joint_spoken_performance_available": true, "authorized_recording_available": false, "detached_narration_planned": false, "video_adapter": "runtime-selected-video-adapter", "asr_adapter": "runtime-selected-word-asr-adapter"},
+  "budget": {"unit": "credits", "estimated_total": 120, "approved_ceiling": 200, "quote_obtained": true, "user_approved": true, "overage_user_approved": false, "paid_anchor_calls": 1, "paid_video_calls": 1},
+  "performance": {"spoken_line": "The ribbed front and dark trim make every edge easy to see—then it shifts straight into a clean, complete layered look.", "one_connected_thought": true, "planned_pause_seconds": 0.35, "facts_bound_to_actions": true, "purposeful_moving_ending": true, "planned_use_result_seconds": 3.5},
+  "captions": {"source": "final_media_asr", "timing_source": "word_level_asr", "segmentation": "word_timed_microphrases", "position_strategy": "adaptive_lower_center", "script_used_as_transcript": false, "max_lines": 2, "max_card_lead_seconds": 0.05, "max_future_word_lead_seconds": 0.6, "avoidance_targets": ["product", "visible_mouth", "hands", "hero_action", "platform_ui"], "failure_policy": "disclose_partial_or_request_real_asr_fallback"},
+  "quality_gates": {"full_video_watch_required": true, "music_muted_voice_review_required": true, "critical_frame_fidelity_review_required": true, "final_caption_timing_review_required": true, "rights_review_required": true, "live_platform_acceptance_separate": true}
+}
+

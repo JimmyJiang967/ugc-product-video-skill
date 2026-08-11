@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720">
+  <rect width="720" height="720" fill="#f2eee7"/>
+  <path d="M250 155 L165 230 L205 520 L280 500 L290 275 L430 275 L440 500 L515 520 L555 230 L470 155 L415 135 L305 135 Z" fill="#ddd3bd" stroke="#2f3538" stroke-width="15"/>
+  <path d="M305 135 L360 235 L415 135" fill="none" stroke="#2f3538" stroke-width="15"/>
+  <line x1="360" y1="235" x2="360" y2="525" stroke="#2f3538" stroke-width="12"/>
+  <g fill="#2f3538"><circle cx="360" cy="300" r="8"/><circle cx="360" cy="355" r="8"/><circle cx="360" cy="410" r="8"/><circle cx="360" cy="465" r="8"/></g>
+  <g stroke="#c5b99f" stroke-width="4"><line x1="300" y1="285" x2="300" y2="500"/><line x1="325" y1="280" x2="325" y2="510"/><line x1="395" y1="280" x2="395" y2="510"/><line x1="420" y1="285" x2="420" y2="500"/></g>
+  <text x="360" y="650" font-family="sans-serif" font-size="28" text-anchor="middle" fill="#454545">Fictional community fixture — front view only</text>
+</svg>
+
