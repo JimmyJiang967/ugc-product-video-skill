@@ -22,4 +22,4 @@ python3 /path/to/skill-creator/scripts/quick_validate.py ugc-product-video
 
 Explain what changed, why it is reusable, which tests cover it, and any remaining live-platform validation gap.
 
-By contributing, you agree that your contribution is licensed under Apache License 2.0 and that you have the right to submit it.
+By contributing, you confirm that you have the right to submit the contribution. You license the contribution under the repository's PolyForm Noncommercial License 1.0.0 and grant the project owner a perpetual, worldwide, non-exclusive, royalty-free right to use, modify, sublicense, and distribute the contribution, including under separate commercial license terms.

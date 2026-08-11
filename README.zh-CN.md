@@ -101,7 +101,7 @@ GitHub README 不会把仓库中的 MP4 文件渲染成原生播放器，因此�
   </tr>
 </table>
 
-案例来源、可见局限和独立素材权利说明见 [showcase/README.md](showcase/README.md)。这些案例媒体不适用 Apache-2.0；在本仓库中查看它们，不代表获得产品、商标、包装、声音或人物肖像的复用权。
+案例来源、可见局限和独立素材权利说明见 [showcase/README.md](showcase/README.md)。在本仓库中查看这些案例，不代表获得产品、商标、包装、声音或人物肖像的复用权。
 
 ## 安装
 
@@ -115,34 +115,25 @@ GitHub README 不会把仓库中的 MP4 文件渲染成原生播放器，因此�
 
 当无法取得费用报价、报价超过预算、关键操作缺乏证据，或当前能力无法生成同步出镜口播时，Agent 应该在付费前停止并说明原因。
 
-## 本地验证
+## 使用许可与商业授权
 
-```bash
-python3 ugc-product-video/scripts/validate_ugc_plan.py examples/apparel/plan.json
-python3 ugc-product-video/scripts/validate_ugc_plan.py examples/wearable-device/plan.json
-python3 ugc-product-video/scripts/validate_ugc_plan.py examples/personal-care/plan.json
-python3 ugc-product-video/scripts/validate_ugc_result.py examples/apparel/result.json
-python3 tests/run_tests.py
-```
+当前版本的软件与文档采用 [PolyForm Noncommercial License 1.0.0](LICENSE)。
 
-## 社区版不包含什么
+无需商业授权即可进行：
 
-- 客户私有 Brief、SOP、截图和交付文档；
-- 除已明确授权、单独声明权利的 Showcase 外，其他客户私有产品图、测试视频和品牌素材；
-- 特定厂商的付费生成适配器、内部参数和凭证；
-- 对平台声音、口型、产品保真、ASR 或成本的能力保证；
-- 把本地 JSON 校验通过表述为真实平台视听验收通过。
+- 个人学习、研究与测试；
+- 兴趣项目和私人实验；
+- 许可证允许的非商业演示与教育用途。
 
-添加任何媒体前，请先阅读 [THIRD_PARTY_ASSETS.md](THIRD_PARTY_ASSETS.md)。
+以下行为必须事先获得项目所有者的书面商业授权：
 
-## Apache-2.0 许可说明
+- 客户项目、收费服务、代运营交付或商业内容生产；
+- 广告、带货、联盟营销、产品销售或其他盈利活动；
+- 以盈利为目的的批量内容生产或自动化运营；
+- 营利性公司的内部业务使用；
+- 集成进收费产品、SaaS、API、模板、工作流或托管服务；
+- 销售、转授权或商业分发本 Skill 及其修改版本。
 
-Apache License 2.0 允许商业使用、修改、分发和私有使用，并提供明确的专利授权。再分发时需要保留许可证与相关声明。它不会自动授予第三方素材、客户资料、平台商标或人物肖像的使用权。
+具体示例和授权方式见 [COMMERCIAL_LICENSE.md](COMMERCIAL_LICENSE.md)。这是一套源码公开、允许非商业使用的 source-available 项目，不属于 OSI 定义的开源软件。
 
-换句话说：你选择 Apache-2.0 后，其他人可以合法把这套社区版用于商业项目，只要遵守许可证条件。
-
-完整条款见 [LICENSE](LICENSE)，项目声明见 [NOTICE](NOTICE)。
-
-## 当前状态
-
-Skill 结构、校验器、三个样例与负向回归已经在本地验证。实际视频质量、付费调用、口型同步、ASR 准确性和最终渲染，需要在各目标平台分别测试。当前不将本地验证等同于真实平台端到端验收。
+第三方产品图、商标、包装、声音、人物肖像和 Showcase 素材仍受各自权利约束，详见 [THIRD_PARTY_ASSETS.md](THIRD_PARTY_ASSETS.md)。

@@ -101,7 +101,7 @@ The sequence uses a lived-in wardrobe setting, protects the garment's visible st
   </tr>
 </table>
 
-See [showcase/README.md](showcase/README.md) for provenance, visible limitations, and separate media-rights terms. The Showcase media is not licensed under Apache-2.0 and does not grant reuse rights to depicted products, trademarks, packaging, voices, or likenesses.
+See [showcase/README.md](showcase/README.md) for provenance, visible limitations, and separate media-rights terms. Permission to view the Showcase does not grant reuse rights to depicted products, trademarks, packaging, voices, or likenesses.
 
 ## Installation
 
@@ -115,37 +115,25 @@ Use $ugc-product-video with my authorized product image. The confirmed facts are
 
 The agent should stop before a paid generation when no quote is available, the quote exceeds the approved ceiling, a required operation is unsupported, or joint spoken performance is unavailable.
 
-## Validation
+## License and commercial use
 
-```bash
-python3 ugc-product-video/scripts/validate_ugc_plan.py examples/apparel/plan.json
-python3 ugc-product-video/scripts/validate_ugc_plan.py examples/wearable-device/plan.json
-python3 ugc-product-video/scripts/validate_ugc_plan.py examples/personal-care/plan.json
-python3 ugc-product-video/scripts/validate_ugc_result.py examples/apparel/result.json
-```
+The software and documentation in the current version are licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE).
 
-The repository also includes negative regressions that must fail:
+Allowed without a commercial license:
 
-```bash
-python3 tests/run_tests.py
-```
+- personal learning, research, and testing;
+- hobby projects and private experiments;
+- noncommercial demonstrations and educational use covered by the license.
 
-## What is not included
+Separate written authorization is required for:
 
-- private customer briefs, SOPs, screenshots, or delivery documents;
-- private customer product images or test videos other than the explicitly authorized, separately licensed Showcase media;
-- vendor-specific paid-generation adapters or credentials;
-- guaranteed control over a provider's voice, face, lipsync, product fidelity, ASR, or cost;
-- a claim that local schema validation equals live-platform audiovisual acceptance.
+- client work, paid services, agency delivery, or commercial content production;
+- advertising, affiliate marketing, product sales, or other revenue-generating use;
+- batch production or operation intended to generate profit;
+- internal use by a for-profit business;
+- integration into a paid product, SaaS, API, template, workflow, or managed service;
+- selling, sublicensing, or commercially redistributing this Skill or a modified version.
 
-See [THIRD_PARTY_ASSETS.md](THIRD_PARTY_ASSETS.md) before adding media.
+See [COMMERCIAL_LICENSE.md](COMMERCIAL_LICENSE.md) for practical examples and the authorization route. This is a source-available project, not an OSI-approved open-source project.
 
-## License
-
-Apache License 2.0 permits commercial use, modification, patent use, distribution, and private use subject to its conditions. Preserve the license and notices when redistributing modified or unmodified copies. The license does not grant rights to third-party assets, customer materials, platform trademarks, or personal likenesses.
-
-See [LICENSE](LICENSE), [NOTICE](NOTICE), and [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Project status
-
-The Skill structure, validators, and bundled fixtures are tested locally. Live video quality, paid-call behavior, lipsync, ASR accuracy, and final rendering must be validated in each target platform. Direct end-to-end acceptance in a live platform is still pending.
+Third-party product images, trademarks, packaging, voices, likenesses, and Showcase media remain subject to their own rights. See [THIRD_PARTY_ASSETS.md](THIRD_PARTY_ASSETS.md).
