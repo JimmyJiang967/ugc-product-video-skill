@@ -9,7 +9,7 @@ dist/
 build/
 *.zip
 *.mp4
+!showcase/**/final-video.mp4
 *.mov
 *.wav
 *.mp3
-

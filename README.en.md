@@ -56,6 +56,51 @@ Optional:
 6. Review the playable draft, apply the smallest correction, then generate captions from final-media ASR.
 7. Watch the final result and validate both the plan and result manifests.
 
+## Real showcases
+
+The following historical direct test outputs show the complete route from a product image to one 2×2 state sheet and one continuous 15-second video. They demonstrate the workflow; they are not quality benchmarks or guarantees for other providers.
+
+### Shoe · unboxing to on-foot result
+
+Four states turn one product reference into an unboxing hook, close presentation, detail proof, and an on-foot ending.
+
+<table>
+  <tr><th>1 · Product image</th><th>2 · 2×2 state sheet</th><th>3 · Final video</th></tr>
+  <tr>
+    <td><a href="showcase/shoe/product.jpg"><img src="showcase/shoe/product-preview.jpg" width="220" alt="Shoe product input"></a></td>
+    <td><a href="showcase/shoe/anchor-sheet.png"><img src="showcase/shoe/anchor-preview.jpg" width="220" alt="Shoe four-stage anchor sheet"></a></td>
+    <td><a href="showcase/shoe/final-video.mp4"><img src="showcase/shoe/final-video-preview.jpg" width="220" alt="Shoe final-video preview"></a><br><a href="showcase/shoe/final-video.mp4">Watch the 15-second video</a></td>
+  </tr>
+</table>
+
+### Wearable device · worn state and effect proof
+
+Because the product control was not confirmed, the sequence avoids a guessed button press and uses a restrained airflow proxy near visible vents.
+
+<table>
+  <tr><th>1 · Product image</th><th>2 · 2×2 state sheet</th><th>3 · Final video</th></tr>
+  <tr>
+    <td><a href="showcase/wearable-device/product.png"><img src="showcase/wearable-device/product-preview.jpg" width="220" alt="Wearable device product input"></a></td>
+    <td><a href="showcase/wearable-device/anchor-sheet.png"><img src="showcase/wearable-device/anchor-preview.jpg" width="220" alt="Wearable device four-stage anchor sheet"></a></td>
+    <td><a href="showcase/wearable-device/final-video.mp4"><img src="showcase/wearable-device/final-video-preview.jpg" width="220" alt="Wearable device final-video preview"></a><br><a href="showcase/wearable-device/final-video.mp4">Watch the 15-second video</a></td>
+  </tr>
+</table>
+
+### Cardigan · visible details to worn result
+
+The sequence uses a lived-in wardrobe setting, protects the garment's visible structure, and ends in a worn state without inventing material or comfort claims.
+
+<table>
+  <tr><th>1 · Product image</th><th>2 · 2×2 state sheet</th><th>3 · Final video</th></tr>
+  <tr>
+    <td><a href="showcase/cardigan/product.png"><img src="showcase/cardigan/product-preview.jpg" width="220" alt="Cardigan product input"></a></td>
+    <td><a href="showcase/cardigan/anchor-sheet.png"><img src="showcase/cardigan/anchor-preview.jpg" width="220" alt="Cardigan four-stage anchor sheet"></a></td>
+    <td><a href="showcase/cardigan/final-video.mp4"><img src="showcase/cardigan/final-video-preview.jpg" width="220" alt="Cardigan final-video preview"></a><br><a href="showcase/cardigan/final-video.mp4">Watch the 15-second video</a></td>
+  </tr>
+</table>
+
+See [showcase/README.md](showcase/README.md) for provenance, visible limitations, and separate media-rights terms. The Showcase media is not licensed under Apache-2.0 and does not grant reuse rights to depicted products, trademarks, packaging, voices, or likenesses.
+
 ## Installation
 
 Import or copy [`create-evidence-led-ugc-product-video`](create-evidence-led-ugc-product-video/) into the Skills directory supported by your AI-agent runtime. The folder contains the required `SKILL.md`, UI metadata, references, and scripts.
@@ -86,7 +131,7 @@ python3 tests/run_tests.py
 ## What is not included
 
 - private customer briefs, SOPs, screenshots, or delivery documents;
-- customer or third-party product images and test videos;
+- private customer product images or test videos other than the explicitly authorized, separately licensed Showcase media;
 - vendor-specific paid-generation adapters or credentials;
 - guaranteed control over a provider's voice, face, lipsync, product fidelity, ASR, or cost;
 - a claim that local schema validation equals live-platform audiovisual acceptance.
@@ -102,4 +147,3 @@ See [LICENSE](LICENSE), [NOTICE](NOTICE), and [CONTRIBUTING.md](CONTRIBUTING.md)
 ## Project status
 
 The Skill structure, validators, and bundled fixtures are tested locally. Live video quality, paid-call behavior, lipsync, ASR accuracy, and final rendering must be validated in each target platform. Direct end-to-end acceptance in a live platform is still pending.
-

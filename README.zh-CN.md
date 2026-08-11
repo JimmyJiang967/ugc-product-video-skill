@@ -56,6 +56,51 @@ Skill 与具体平台解耦，不写死某个厂商的工具名、模型名、�
 6. 完整观看可播放草稿，做最小范围修正，再从最终媒体进行 ASR 字幕生成。
 7. 完整回看成片，并校验策划与结果清单。
 
+## 真实案例
+
+以下是历史测试中的直接输出，用来展示从产品图到一张 2×2 四宫格状态图，再到一条连续 15 秒视频的完整路径。它们是工作流证据，不代表质量基准，也不保证在其他生成平台得到完全相同的结果。
+
+### 鞋类 · 从开箱到上脚结果
+
+四个状态把一张产品参考图转化为开箱开场、近距离展示、细节证明和上脚结尾。
+
+<table>
+  <tr><th>1 · 产品图</th><th>2 · 2×2 四宫格</th><th>3 · 最终视频</th></tr>
+  <tr>
+    <td><a href="showcase/shoe/product.jpg"><img src="showcase/shoe/product-preview.jpg" width="220" alt="鞋类产品输入图"></a></td>
+    <td><a href="showcase/shoe/anchor-sheet.png"><img src="showcase/shoe/anchor-preview.jpg" width="220" alt="鞋类四阶段锚点图"></a></td>
+    <td><a href="showcase/shoe/final-video.mp4"><img src="showcase/shoe/final-video-preview.jpg" width="220" alt="鞋类最终视频预览"></a><br><a href="showcase/shoe/final-video.mp4">观看 15 秒视频</a></td>
+  </tr>
+</table>
+
+### 穿戴设备 · 穿戴状态与克制的效果证明
+
+当功能已确认但控件位置没有证据时，流程不会虚构按键操作，而是展示真实穿戴状态，并在可见出风口附近使用克制的气流代理物。
+
+<table>
+  <tr><th>1 · 产品图</th><th>2 · 2×2 四宫格</th><th>3 · 最终视频</th></tr>
+  <tr>
+    <td><a href="showcase/wearable-device/product.png"><img src="showcase/wearable-device/product-preview.jpg" width="220" alt="穿戴设备产品输入图"></a></td>
+    <td><a href="showcase/wearable-device/anchor-sheet.png"><img src="showcase/wearable-device/anchor-preview.jpg" width="220" alt="穿戴设备四阶段锚点图"></a></td>
+    <td><a href="showcase/wearable-device/final-video.mp4"><img src="showcase/wearable-device/final-video-preview.jpg" width="220" alt="穿戴设备最终视频预览"></a><br><a href="showcase/wearable-device/final-video.mp4">观看 15 秒视频</a></td>
+  </tr>
+</table>
+
+### 针织开衫 · 从可见细节到真实上身
+
+流程使用生活化衣橱场景，保持服装可见结构，并以实际穿着状态收尾，不虚构材质、舒适度或版型结论。
+
+<table>
+  <tr><th>1 · 产品图</th><th>2 · 2×2 四宫格</th><th>3 · 最终视频</th></tr>
+  <tr>
+    <td><a href="showcase/cardigan/product.png"><img src="showcase/cardigan/product-preview.jpg" width="220" alt="针织开衫产品输入图"></a></td>
+    <td><a href="showcase/cardigan/anchor-sheet.png"><img src="showcase/cardigan/anchor-preview.jpg" width="220" alt="针织开衫四阶段锚点图"></a></td>
+    <td><a href="showcase/cardigan/final-video.mp4"><img src="showcase/cardigan/final-video-preview.jpg" width="220" alt="针织开衫最终视频预览"></a><br><a href="showcase/cardigan/final-video.mp4">观看 15 秒视频</a></td>
+  </tr>
+</table>
+
+案例来源、可见局限和独立素材权利说明见 [showcase/README.md](showcase/README.md)。这些案例媒体不适用 Apache-2.0；在本仓库中查看它们，不代表获得产品、商标、包装、声音或人物肖像的复用权。
+
 ## 安装
 
 把 [`create-evidence-led-ugc-product-video`](create-evidence-led-ugc-product-video/) 文件夹导入或复制到你的 AI Agent 运行环境所支持的 Skills 目录。该目录已经包含 `SKILL.md`、界面元数据、参考方法和校验脚本。
@@ -81,7 +126,7 @@ python3 tests/run_tests.py
 ## 社区版不包含什么
 
 - 客户私有 Brief、SOP、截图和交付文档；
-- 客户或第三方的产品图、测试视频和品牌素材；
+- 除已明确授权、单独声明权利的 Showcase 外，其他客户私有产品图、测试视频和品牌素材；
 - 特定厂商的付费生成适配器、内部参数和凭证；
 - 对平台声音、口型、产品保真、ASR 或成本的能力保证；
 - 把本地 JSON 校验通过表述为真实平台视听验收通过。
@@ -99,4 +144,3 @@ Apache License 2.0 允许商业使用、修改、分发和私有使用，并提�
 ## 当前状态
 
 Skill 结构、校验器、三个样例与负向回归已经在本地验证。实际视频质量、付费调用、口型同步、ASR 准确性和最终渲染，需要在各目标平台分别测试。当前不将本地验证等同于真实平台端到端验收。
-
